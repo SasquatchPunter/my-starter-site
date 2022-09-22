@@ -1,10 +1,11 @@
 import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
 import Layout from "../components/Layout";
+import Seo from "../components/Seo";
 
 function IndexPage() {
   return (
-    <Layout pageTitle="Home Page">
+    <Layout pageTitle="Gatsby">
       <p>I'm making this by following the Gatsby Tutorial.</p>
 
       <StaticImage
@@ -18,5 +19,7 @@ function IndexPage() {
     </Layout>
   );
 }
+
+export const Head = () => <Seo title="Welcome" />;
 
 export default IndexPage;
